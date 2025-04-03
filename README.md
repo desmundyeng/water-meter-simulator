@@ -2,7 +2,7 @@
 
 A web application that simulates a physical water meter tracking water usage and generating alarms based on water consumption patterns.
 
-![Demo](./Demo.png)
+![Demo](https://raw.githubusercontent.com/desmundyeng/water-meter-simulator/refs/heads/master/demo.png)
 
 ## Features
 
