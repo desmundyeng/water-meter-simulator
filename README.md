@@ -1,46 +1,58 @@
-# Getting Started with Create React App
+# Water Meter Simulator
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A web application that simulates a physical water meter tracking water usage and generating alarms based on water consumption patterns.
 
-## Available Scripts
+![Demo](./Demo.png)
 
-In the project directory, you can run:
+## Features
 
-### `npm start`
+- **Water Meter Display**: Simulates a physical water meter with readings in cubic meters (m³)
+- **Configurable Flow Direction**: Support for both forward and reverse water flow
+- **Alarm Detection**:
+  - **Leak**: Detects small, continuous water flow over time
+  - **No Flow**: Detects when there is zero water consumption over time
+  - **Burst**: Detects high water consumption over a short period
+  - **Backflow**: Detects reverse water flow over a threshold
+- **Configurable Parameters**: All alarm thresholds and time windows are configurable
+- **Reading History**: Tracks and displays water meter readings and consumption
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Technical Details
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+- Built with React and TypeScript
+- Styled with Tailwind CSS
+- State management with React hooks
+- Date formatting with date-fns
 
-### `npm test`
+## Installation
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+1. Clone the repository
+2. Install dependencies:
+```
+npm install
+```
+3. Start the development server:
+```
+npm start
+```
 
-### `npm run build`
+## Configuration Options
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+The simulator allows configuration of the following parameters:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- **Update interval**: How frequently the meter reading updates (in seconds)
+- **Flow direction**: Forward or reverse
+- **Leak alarm**: Configure threshold value and time window
+- **No flow alarm**: Configure time window
+- **Burst alarm**: Configure threshold value and time window
+- **Backflow alarm**: Configure threshold value and time window
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Usage
 
-### `npm run eject`
+1. Adjust the configuration settings as needed
+2. The meter will automatically start simulating water consumption
+3. Active alarms will be displayed in the alarms table
+4. Reading history shows the last 20 meter readings
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+## License
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+MIT

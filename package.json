@@ -2,7 +2,10 @@
   "name": "water-meter-simulator",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://desmundyeng.github.io/water-meter-simulator",
   "dependencies": {
+    "@headlessui/react": "^2.2.0",
+    "@heroicons/react": "^2.2.0",
     "@testing-library/dom": "^10.4.0",
     "@testing-library/jest-dom": "^6.6.3",
     "@testing-library/react": "^16.3.0",
@@ -11,10 +14,13 @@
     "@types/node": "^16.18.126",
     "@types/react": "^19.1.0",
     "@types/react-dom": "^19.1.1",
+    "@types/uuid": "^10.0.0",
+    "date-fns": "^4.1.0",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
     "react-scripts": "5.0.1",
     "typescript": "^4.9.5",
+    "uuid": "^11.1.0",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
@@ -40,5 +46,10 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.16",
+    "postcss": "^8.4.31",
+    "tailwindcss": "^3.4.0"
   }
 }
